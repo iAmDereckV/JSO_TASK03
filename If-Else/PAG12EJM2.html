@@ -1,0 +1,21 @@
+<!-- PAGINA 12 EJEMPLO 2 -->
+<html>
+  <head>
+    <script>
+      function ver() {
+        var edad = parseInt(cedad.value);
+        if (edad <= 18) alert("Abono Joven");
+        else {
+          if (edad >= 65) alert("Abono 3ª Edad");
+          else alert("Abono normal");
+        }
+      }
+    </script>
+    <title>Pagina nueva 1</title>
+  </head>
+  <body>
+    Edad:
+    <!-- AGREGE EL ATRIBUTO NAME -->
+    <input type="text" name="cedad" id="cedad" size="3" onBlur="ver();" />
+  </body>
+</html>

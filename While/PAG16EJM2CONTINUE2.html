@@ -1,0 +1,21 @@
+<!-- PAGINA 16 EJEMPLO 2 CONTINUE 2 -->
+<html>
+  <head>
+    <script>
+      function bucle() {
+        var cont = 1;
+        while (cont <= 10) {
+          alert(cont);
+          cont++;
+          if (cont == 5) {
+            // HACE QUE CONT SEA FALSO EN EL SIG CICLO
+            cont = 30;
+            continue;
+          }
+        }
+      }
+    </script>
+  </head>
+  <!-- BUCLE TERMINA HASTA 4 -->
+  <body onLoad="bucle();"></body>
+</html>

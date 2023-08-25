@@ -1,0 +1,32 @@
+<!-- PAGINA 19 EJEMPLO 2 -->
+<html>
+  <head>
+    <script>
+      function opt(valor) {
+        var cadena;
+        switch (valor) {
+          case 1:
+            cadena = "uno";
+            break;
+          case 2:
+            cadena = "dos";
+            break;
+          case 3:
+            cadena = "tres";
+            break;
+          case 4:
+            cadena = "cuatro";
+            break;
+        }
+        alert("Vinculo " + cadena);
+      }
+    </script>
+    <title>Autor:Ricardo Amezua</title>
+  </head>
+  <body>
+    <a href="Uno.htm" onMouseOver="opt(1);">uno</a>
+    <a href="Dos.htm" onMouseOver="opt(2);">dos</a>
+    <a href="Tres.htm" onMouseOver="opt(3);">tres</a>
+    <a href="Cuatro.htm" onMouseOver="opt(4);">cuatro</a>
+  </body>
+</html>

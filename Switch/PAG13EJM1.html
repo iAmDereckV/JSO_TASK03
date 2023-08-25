@@ -1,0 +1,29 @@
+<!-- PAGINA 13 EJEMPLO 1 -->
+<html>
+  <head>
+    <script>
+      function espe() {
+        var tipo = cespe.value;
+        switch (tipo) {
+          case "humano":
+            alert("Eres un Humano");
+            break;
+          case "planta":
+            alert("Eres un Vegetal");
+            break;
+          case "animal":
+            alert("Eres del reino Animal");
+            break;
+          default:
+            alert("Especie Desconocida");
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    ESPECIE:
+    <!-- AGREGE EL ATRIBUTO NAME -->
+    <input type="text" name="cespe" id="cespe" size="20" onBlur="espe();" />
+  </body>
+</html>

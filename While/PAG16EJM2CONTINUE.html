@@ -1,0 +1,18 @@
+<!-- PAGINA 16 EJEMPLO 2 CONTINUE -->
+<html>
+  <head>
+    <script>
+      function bucle() {
+        var cont = 1;
+        while (cont <= 10) {
+          alert(cont);
+          cont++;
+          // ESTE IF NO ES FUNCIONAL POR EL CONTINUE
+          if (cont == 5) continue;
+        }
+      }
+    </script>
+  </head>
+  <!-- BUCLE TERMINA HASTA 4 -->
+  <body onLoad="bucle();"></body>
+</html>
